@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Project Title</title>
+  <title>Embryo Project</title>
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
@@ -30,6 +30,9 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
+            As a smaller piece of the larger project described in the overview page, we looked to detect Embryo Nuclei using an object detection NN.
+             
+            <br><br>  
             The approach taken in this project was to use transfer learning on a google Inception pretrained object detection model.  
             Using Tensoflow model libraries, we took a pretrained weight map from a model trained on the Coco dataset.
             We then retrained this model using annoted embryo images.  To annotate the image data we used Rectlable image annotator.
