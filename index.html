@@ -33,9 +33,6 @@
           </div>
           <div class="flex-item flex-column">
             <p class="text text-medium">
-              <a target="_blank" href="https://www.linkedin.com/in/dylanrandle/">Dylan Randle</a> <br>
-              <a target="_blank" href="https://www.linkedin.com/in/thomas-hill-862a6093/">Tommy Hill</a><br>
-              <a target="_blank" href="https://www.linkedin.com/in/filip-michalsky-72772280/">Filip Michalsky</a><br>
               <a target="_blank" href="https://www.linkedin.com/in/paxton-maeder-york-00108736/">Paxton Maeder-York</a><br>
             </p>
           </div>
@@ -43,34 +40,17 @@
         <div class="flex-row">
           <div class="flex-item flex-column">
             <p class="text add-top-margin">
-              We propose Youtube video classification at scale, leveraging a dataset of over 8 million videos
-              with high throughput computing and large data handling system design. The project requires training
-              on 1.5 terabytes of video and audio files to then predict a video type from several thousand labels. Our
-              solution uses two bidirectional-LSTM networks, one for audio and one for video, trained on a Spark-based
-              sitting atop Hadoop YARN and enabled by Elephas: a library that enables training Tensorflow models
-              in Spark. The infrastructure used consists of a custom cluster of m4.xlarge instances on AWS using Amazon
-              Machine Images to spin-up nodes with the correct software dependencies. We found this approach produced
-              reliable systemic speedup and effective classification with our final model.<br/><br/>
-
-              We have learned many lessons through this project, especially in provisioning our custom Elastic Map Reduce
-              cluster, as well as in building various software dependencies: Tensorflow-Spark connector for reading
-              TFRecord files, Amazon-flavored Linux, Apache Maven, and getting all of our various components to be
-              version-compatible (e.g. Scala, Java versions with PySpark, Tensorflow-Spark and Amazon Linux versions).
-              We faced many issues in provisioning the cluster as a result of the growing complexity that so many software
-              dependencies adds to the problem, especially when there are non-backward-compatible components (e.g. PySpark
-              with Scala).<br/><br/>
-
-              In the future, we would recommend not using Amazon Machine Images (AMIs) for provisioning, and instead bundling
-              the Python-based dependencies into jar files (a method which we found was possible only after the fact). This
-              would certainly save much time as there are many specific "gotchas" that are required for tackling the AMI
-              method successfully (EBS volume configuration, must be Amazon Linux, etc.). On the positive side, we found that
-              asynchronous weight updates can be parallelized highly effectively, and we actually achieved superlinear speedup
-              with this  method. Future work may involve training more complex models (e.g. multiple input models), or
-              implementing alternative parallel Stochastic Gradient Descent schemes (e.g. Baidu's proposed Ring AllReduce).<br/><br/>
-
-              We hope that you can learn from our work and the particular method we employed to deploy Tensorflow model training
-              on a massive dataset by utilizing Spark sitting atop a Hadoop-based elastic cluster. Please check out the source
-              code <a href="https://github.com/filip-michalsky/cs205_spring19_final_project">here</a>.<br/><br/>
+              #Overview:
+              <b/>
+              While Assisted Reproduction Technology (ART) currently is responsible for 1.7% of babies born in the United States, selecting which embryo to implant is a significant challenge. Because of this difficulty, ART multiple pregnancy rates are nearly 20%, resulting in significant morbidity and medical expenses to patients. Here, we propose to create a software pipeline to improve embryo selection in ART. To this end, we will build novel deep learning and interactive data visualization approaches for clinical ART images. We will first extract and analyze visual biomarkers from routinely collected images of embryos. Then combining these visual biomarkers with patients’ electronic health record (EHR) data and clinical genetic testing of embryos, we will develop interpretable computation models to score embryos on their viability. We plan to integrate our software solutions into an open-source cloud service platform, easily accessible, and adaptable across clinics to improve ART embryo selection and clinical data analysis. This will also provide a novel opportunity to gain fundamental insight into the earliest stages of human development.
+              Keywords: Assisted Reproduction Technology, clinical embryology, deep learning, data visualization.
+              <b/><b/>
+              #Intellectual Merit:
+              <b/>
+              To advance the field of ART with data-driven approaches, our proposed three-year project will first provide the community a large-scale public benchmark dataset, including annotated embryo images and associated anonymized EHR data, to encourage reproducible open research. With our novel computational models and visualization frameworks, biologists will be able to extract and analyze embryo features to deepen the pre- implantation understanding. Our extensible open-source cloud service platform, EmbryoProfiler, will be deployed to help facilitate daily operation in clinics, foster decision making, and enrich data-driven embryo analysis. Throughout, our project aims to discover novel biological insights, improve the success rate of ART, and build an open source community to share data and tools.
+              <b/><b/>
+              #Broader Impacts:<b/>
+              Our project will create state-of-the-art analysis approaches for ART clinicians around the world, possibly including ART in veterinary care. We expect that the general techniques and software we develop will be a useful template for other biomedical fields where images are combined with patient data, e.g., combining histology of cancer tumor biopsies with patient medical histories. We will tightly integrate education into the proposed program, by training postdoctoral scholars and graduate students, and by involving undergraduate and high-school students in this work. Outreach in particular to under-represented minorities and women at the undergraduate level will be accomplished through extensive and established mechanisms of the Harvard REU program.
             </p>
           </div>
         </div>
